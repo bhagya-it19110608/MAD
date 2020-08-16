@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Request Coach</string>
+    <string name="img_fitness">Display Fitness Coaches</string>
+    <string name="img_lean_body">Display Lean Coaches</string>
+    <string name="btn_view_more">View More Categories</string>
+    <string name="btn_request">Request Coach and get the form </string>
+    <string name="btn_previous">Redirect to Member Details</string>
+
+</resources>

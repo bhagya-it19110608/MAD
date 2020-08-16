@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imgHeader2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fitcoach" />
+
+    <ImageView
+        android:id="@+id/imgC3"
+        android:layout_width="wrap_content"
+        android:layout_height="238dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-33dp"
+        app:srcCompat="@drawable/c3" />
+
+    <ImageView
+        android:id="@+id/imgC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="-37dp"
+        android:layout_marginBottom="229dp"
+        app:srcCompat="@drawable/c2" />
+
+    <ImageView
+        android:id="@+id/imgC1"
+        android:layout_width="442dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="427dp"
+        android:layout_marginEnd="-32dp"
+        android:layout_marginBottom="75dp"
+        app:srcCompat="@drawable/c1" />
+
+    <Button
+        android:id="@+id/btnR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="380dp"
+        android:text="Request"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/btnR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="201dp"
+        android:background="@drawable/button"
+        android:text="Request" />
+
+    <Button
+        android:id="@+id/btnR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/button"
+        android:text="Request" />
+
+</RelativeLayout>
