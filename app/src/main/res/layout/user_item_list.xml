@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_Id"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:text="Id"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/edittext_name"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:text="Id"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/edittext_email"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:text="Id"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/edittext_age"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:text="Id"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_weight="2"
+            android:id="@+id/button_edit"
+            android:background="#0288D1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_weight="2"
+            android:id="@+id/button_delete"
+            android:background="#D32F2F"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C5C5C5"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>
