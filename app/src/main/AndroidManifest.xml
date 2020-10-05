@@ -5,14 +5,21 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="BMI"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DietPlan2"></activity>
-        <activity android:name=".DietPlans" />
-        <activity android:name=".Results" />
-        <activity android:name=".GetMeasurements" />
+        <activity android:name="com.example.bmi_mad.MainActivity"></activity>
+        <activity android:name="com.example.bmi_mad.dietPlan" />
+        <activity android:name="com.example.bmi_mad.CreateDietPlan" />
+        <activity android:name="com.example.bmi_mad.ShowResults" />
+        <activity android:name="com.example.bmi_mad.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

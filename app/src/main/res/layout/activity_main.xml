@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".GetMeasurements">
+    tools:context=".MainActivity">
 
 
     <TextView
@@ -31,7 +31,6 @@
         android:cursorVisible="true"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="@string/enter_weight"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textColorHint="#989898"
@@ -50,7 +49,6 @@
         android:inputType="numberDecimal"
         android:background="@drawable/text_background"
         android:textColor="#000000"
-        android:text="@string/enter_height"
         android:textColorHint="#5E5E5E"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
