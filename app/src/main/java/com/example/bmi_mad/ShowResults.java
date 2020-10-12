@@ -41,14 +41,27 @@ public class ShowResults extends AppCompatActivity {
         }
 
         Button button1 = (Button) findViewById(R.id.button2);
+        Button button2 = (Button) findViewById(R.id.button3);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openMainActivity();
             }
         });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openShowDietPlan();
+            }
+        });
 
     }
+
+    private void openShowDietPlan() {
+        Intent intent = new Intent(this,ShowDietPlan.class);
+        startActivity(intent);
+    }
+
     public void openMainActivity(){
         Intent intent1 = new Intent(this,MainActivity.class);
         startActivity(intent1);

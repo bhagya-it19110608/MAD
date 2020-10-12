@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.bmi_mad.MainActivity"></activity>
-        <activity android:name="com.example.bmi_mad.dietPlan" />
-        <activity android:name="com.example.bmi_mad.CreateDietPlan" />
-        <activity android:name="com.example.bmi_mad.ShowResults" />
-        <activity android:name="com.example.bmi_mad.Splash">
+        <activity android:name=".EditDietPlan"/>
+        <activity android:name=".AddDietPlan" />
+        <activity android:name=".Splash"/>
+        <activity android:name=".dietPlan" />
+        <activity android:name=".ShowDietPlan" />
+        <activity android:name=".ShowResults" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
