@@ -1,79 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".MainActivity2">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
-    <ImageView
-        android:id="@+id/imgHeader2"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/fitcoach" />
+        android:padding="1dp"
+        android:background="@drawable/gradient"
+        tools:context=".MainActivity2">
 
-    <ImageView
-        android:id="@+id/imgC3"
-        android:layout_width="wrap_content"
-        android:layout_height="238dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="-33dp"
-        app:srcCompat="@drawable/c3" />
+        <ImageView
+            android:id="@+id/imgHeader2"
+            android:layout_width="358dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/header" />
 
-    <ImageView
-        android:id="@+id/imgC2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-5dp"
-        android:layout_marginTop="219dp"
-        android:layout_marginEnd="-37dp"
-        android:layout_marginBottom="229dp"
-        app:srcCompat="@drawable/c2" />
+        <ImageView
+            android:id="@+id/coach1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/coach1" />
 
-    <ImageView
-        android:id="@+id/imgC1"
-        android:layout_width="442dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="427dp"
-        android:layout_marginEnd="-32dp"
-        android:layout_marginBottom="75dp"
-        app:srcCompat="@drawable/c1" />
+        <TextView
+            android:id="@+id/txtc1"
+            android:layout_width="93dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="238dp"
+            android:background="@color/design_default_color_on_secondary"
+            android:text="+Add Coach"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/coach2"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/btnR3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="380dp"
-        android:text="Request"
-        android:background="@drawable/button"/>
+        <Button
+            android:id="@+id/btnadc1"
+            android:layout_width="87dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="278dp"
+            android:background="#DFD5D5"
+            android:text="Request"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.862" />
 
-    <Button
-        android:id="@+id/btnR2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="201dp"
-        android:background="@drawable/button"
-        android:text="Request" />
+        <Button
+            android:id="@+id/btncnc1"
+            android:layout_width="87dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="278dp"
+            android:background="#DFD5D5"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.778"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.862" />
 
-    <Button
-        android:id="@+id/btnR1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="22dp"
-        android:background="@drawable/button"
-        android:text="Request" />
+        <ImageView
+            android:id="@+id/coach2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coach1"
+            app:layout_constraintVertical_bias="0.195"
+            app:srcCompat="@drawable/coach2" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/txtc2"
+            android:layout_width="93dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="276dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="+Add Coach"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/coach2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnadc2"
+            android:layout_width="87dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginBottom="24dp"
+            android:background="#DFD5D5"
+            android:text="Request"
+            app:layout_constraintBottom_toTopOf="@+id/coach2"
+            app:layout_constraintStart_toStartOf="@+id/txtc2" />
+
+        <Button
+            android:id="@+id/btncnc2"
+            android:layout_width="87dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginBottom="24dp"
+            android:background="#DFD5D5"
+            android:text="Cancel"
+            app:layout_constraintBottom_toTopOf="@+id/coach2"
+            app:layout_constraintStart_toStartOf="@+id/txtc2" />
+
+        <Button
+            android:id="@+id/btntodo"
+            android:layout_width="356dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="13dp"
+            android:text="Go To Plans"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnadc1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

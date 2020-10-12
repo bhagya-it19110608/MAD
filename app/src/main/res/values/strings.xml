@@ -5,5 +5,12 @@
     <string name="btn_view_more">View More Categories</string>
     <string name="btn_request">Request Coach and get the form </string>
     <string name="btn_previous">Redirect to Member Details</string>
-
+    <string name="your_name_here">Name</string>
+    <string name="your_program_here">Programs</string>
+    <string name="btn_add1">Add Programs</string>
+    <string name="your_weight_here">Weight</string>
+    <string name="your_height_here">Height</string>
+    <string name="btn_add2">Add Details</string>
+    <string name="btn_update">Update Details</string>
+    <string name="btn_next">Redirect To Thr Schedule</string>
 </resources>

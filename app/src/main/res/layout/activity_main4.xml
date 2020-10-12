@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient">
 
-     <ImageView
-        android:id="@+id/imgslean"
+    <ImageView
+        android:id="@+id/imgsbulky"
         android:layout_width="369dp"
         android:layout_height="742dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/leansch" />
+        app:srcCompat="@drawable/bulkysch" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

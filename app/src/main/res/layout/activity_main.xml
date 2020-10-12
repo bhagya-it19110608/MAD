@@ -1,46 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
-    <ImageView
-        android:id="@+id/imgHeader"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:cropToPadding="false"
-        app:srcCompat="@drawable/header" />
+        android:padding="1dp"
+        android:background="@drawable/gradient"
+        tools:context=".MainActivity2">
 
-    <ImageView
-        android:id="@+id/imgW2"
-        android:layout_width="match_parent"
-        android:layout_height="310dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-9dp"
-        android:layout_marginBottom="58dp"
-        app:srcCompat="@drawable/lean" />
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="358dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="0.5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/header" />
 
-    <ImageView
-        android:id="@+id/imgW1"
-        android:layout_width="wrap_content"
-        android:layout_height="579dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="-11dp"
-        android:layout_marginBottom="256dp"
-        app:srcCompat="@drawable/fitness" />
+        <Button
+            android:id="@+id/btns1"
+            android:layout_width="352dp"
+            android:layout_height="188dp"
+            android:background="@drawable/lean"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHeader"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/btnVM"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="13dp"
-        android:text="View More"
-        android:background="@drawable/button"/>
+        <Button
+            android:id="@+id/btns2"
+            android:layout_width="352dp"
+            android:layout_height="188dp"
+            android:background="@drawable/bulky"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btns1"
+            app:layout_constraintVertical_bias="0.0" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btns3"
+            android:layout_width="352dp"
+            android:layout_height="188dp"
+            android:background="@drawable/fitness"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btns2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btns4"
+            android:layout_width="352dp"
+            android:layout_height="188dp"
+            android:background="@drawable/food"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btns3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnreq"
+            android:layout_width="352dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btns4"
+            app:layout_constraintVertical_bias="0.0"
+            android:background="#DFD5D5"
+            android:text="Go For A Coach"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
